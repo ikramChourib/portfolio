@@ -1,0 +1,46 @@
+{
+  "homepage": "https://fouedbengagi.github.io/portfolio/",
+  "name": "foued.bengagi.github.io",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "colorthief": "^2.2.0",
+    "gh-pages": "^2.2.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-easy-emoji": "^1.8.0",
+    "react-headroom": "^3.2.1",
+    "react-lottie": "^1.2.4",
+    "react-reveal": "^1.2.2",
+    "react-scripts": "^5.0.1",
+    "react-twitter-embed": "3.0.3"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "start": "react-scripts start",
+    "build": "node fetch.js && react-scripts build",
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "format": "prettier --write \"./**/*.{js,css,json}\""
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "dotenv": "^8.6.0",
+    "prettier": "^2.8.8"
+  }
+}
