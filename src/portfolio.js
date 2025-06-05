@@ -22,7 +22,7 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/ikramChourib",
+  
   linkedin: "https://linkedin.com/in/chourib-ikram/",
   gmail: "chourib.ikram@gmail.com",
   medium: "https://ikramchourib.medium.com",
