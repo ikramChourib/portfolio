@@ -15,7 +15,7 @@ const greeting = {
     "Ingénieure de recherche et développement avec 5 ans d’expériences spécialité traitement d’informations. Je possède une expérience significative en apprentissage supervisé et non supervisé en traitement des images et des données massives. Je suis une personne professionnelle, motivée, méthodique et soucieuse du détail."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1AhdY2IMOLdkUawxgYwfsl-PmFzwdSK3L/view?usp=sharing",
+    "https://drive.google.com/file/d/18uHobUuOqMhvak-DK1juC8I2QfeTxwF0/view?usp=sharing",
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
