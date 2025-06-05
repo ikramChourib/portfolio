@@ -22,7 +22,7 @@ export default function Skills() {
             ) : (
               <img
                 alt="Man Working"
-                src={require("../../assets/images/developerActivity.png")}
+                src={require("../../assets/images/devgirl.jpg")}
               ></img>
             )}
           </div>

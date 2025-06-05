@@ -12,7 +12,7 @@ const greeting = {
   username: "Ikram Chourib",
   title: "Salut à tous, je m'appelle Ikram",
   subTitle: emoji(
-    "Un développeur Full Stack SpringBoot/Angular 🚀ayant une expérience dans la création d'applications Web avec Spring Boot/Angular/Postgres/Elasticsearch et d'autres bibliothèques et frameworks"
+    "Ingénieure de recherche et développement avec 5 ans d’expériences spécialité traitement d’informations. Je possède une expérience significative en apprentissage supervisé et non supervisé en traitement des images et des données massives. Je suis une personne professionnelle, motivée, méthodique et soucieuse du détail."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1AhdY2IMOLdkUawxgYwfsl-PmFzwdSK3L/view?usp=sharing",
@@ -22,12 +22,11 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/Fouedbengagi",
-  linkedin: "www.linkedin.com/in/fouedbengagi",
-  gmail: "fouedbengagi@gmail.com",
-  facebook: "https://www.facebook.com/foued.bengagi",
-  medium: "https://fouedbengagi.medium.com",
-  stackoverflow: "https://stackoverflow.com/users/11872954/bengagi-foued",
+  github: "https://github.com/ikramChourib",
+  linkedin: "https://linkedin.com/in/chourib-ikram/",
+  gmail: "chourib.ikram@gmail.com",
+  medium: "https://ikramchourib.medium.com",
+
   // Instagram and Twitter are also supported in the links!
   display: true // Set true to display this section, defaults to false
 };
@@ -36,19 +35,28 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "Ce que je fais",
-  subTitle: "DÉVELOPPEUR FULL STACK QUI VEUT EXPLORER CHAQUE STACK TECHNIQUE",
+  subTitle: "en tant qu'Ingénieure R&D",
   skills: [
     emoji(
-      "✅ Le Web est ma passion et je développe des solutions complètes, de l'idée à la production, en cherchant toujours à utiliser la technologie la plus appropriée au projet."
+      "✅ Recherche et veille technologique sur les dernières avancées en IA et traitement d’images"
     ),
     emoji(
-      "✅ Développer du code hautement performant et propre"
+      "✅Traitement des images satellites et analyse spatiale"
     ),
     emoji(
-      "✅ faire face à de nombreux défis techniques tels que la refactorisation du code et les tests de charge."
+      "✅Réalisation des POCs avec nos modèles IA sur des cas concrets"
     ),
     emoji(
-      "✅ Je me concentre fortement sur les meilleures pratiques en matière de qualité du code et d'ingénierie telles que TDD, CI/CD et l'automatisation."
+      "✅ Entraînement et Optimisation des Modèles IA pour la prédiction des objets aériennes"
+    ),
+    emoji(
+      "✅Encadrement et supervision des projets étudiants en Master"
+    ),
+    emoji(
+      "✅Rédaction de livrables pour des appels d’offres techniques"
+    ),
+    emoji(
+      "✅ Participation à des conférences nationales/internationales pour dissusion des résultats et enrichissement scientifique"
     )
   ],
 
@@ -57,36 +65,24 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "java",
-      fontAwesomeClassname: "fab fa-java"
+      skillName: "Python",
+      fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "angular",
-      fontAwesomeClassname: "fab fa-angular"
+      skillName: "Machine Learning",
+      fontAwesomeClassname: "fas fa-robot" // Pas de "fa-IAr", utilisez une icône représentative comme un robot
     },
     {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      skillName: "Scrum",
+      fontAwesomeClassname: "fas fa-project-diagram" // Font Awesome ne propose pas "fa-scrum"
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "SageMaker",
+      fontAwesomeClassname: "fas fa-brain" // SageMaker n'a pas d'icône officielle Font Awesome
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    },
-    {
-      skillName: "jenkins",
-      fontAwesomeClassname: "fab fa-jenkins"
+      skillName: "Azure",
+      fontAwesomeClassname: "fas fa-cloud" // Utiliser une icône générique "cloud"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -101,8 +97,22 @@ const educationInfo = {
       schoolName: "Université ISAMM",
       logo: require("./assets/images/isamm.png"),
       subHeader: "Diplôme d'ingénieur en informatique",
-      duration: "September 2016 - April 2019",
-      desc: "génie logiciel"
+      duration: "September 2016 - Septembre 2019",
+      desc: "Imagerie numérique et Réalité virtuelle"
+    },
+    {
+      schoolName: "Ecole Nationiale de Sciences Informatique",
+      logo: require("./assets/images/ensi1.jpg"),
+      subHeader: "Diplôme de doctorat en informatique",
+      duration: "octobre 2019 - Décembre 2022",
+      desc: "Traitement d’informations, Intelligence artificielle"
+    },
+    {
+      schoolName: "IMT-Atlantique",
+      logo: require("./assets/images/IMT_Atlantique_logo.png"),
+      subHeader: "Diplôme de doctorat en informatique",
+      duration: "octobre 2019 - Décembre 2022",
+      desc: "Traitement d’informations, Intelligence artificielle"
     }
   ]
 };
@@ -112,30 +122,36 @@ const educationInfo = {
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
+    
     {
-      Stack: "JAVA", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
-    },{
-      Stack: "SPRING BOOT", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "ANGULAR",
+      Stack: "Approches Statistiques: Machine Learning, Deep Learning, Traitement et analyse des données massives, Raisonnement à base de cas, Clustering, Classification, Théorie des ensembles flou, Théorie des possibilités, Mesure de similarité, Traitement d’images satellitaires et médicales",
       progressPercentage: "80%"
     },
     {
-      Stack: "ELASTICSEARCH",
+      Stack: "modèle IA: YOLO, Detectron2, SAM, SAM2,MRCNN, FCN, UNET, mask2former, DETR, MRCNN, KNN, KMeans", //Insert stack or technology you have experience in
+      progressPercentage: "90%" //Insert relative proficiency in percentage
+    },{
+      Stack: " Frameworks IA : TensorFlow, PyTorch,numpy, matplotlib, sicketLearn", //Insert stack or technology you have experience in
+      progressPercentage: "90%" //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "Langages & outils : Python, SQL",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "Cloud : AWS Sagemaker, Azure, S3",
       progressPercentage: "90%"
     },
     {
-      Stack: "KUBERNETES",
+      Stack: "SIG : QGIS, GeoPandas, Shapely",
       progressPercentage: "80%"
     },
     {
-      Stack: "DOCKER",
+      Stack: "Méthodologie : SCRUM Agile",
       progressPercentage: "80%"
     }
     
+
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
@@ -146,61 +162,85 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Consultant Spring Boot/Angular + SCRUM Mater",
-      company: "ENEDIS",
-      companylogo: require("./assets/images/enedis.png"),
-      date: "Février 2022 – Présent",
+      role: "Ingénieure R&D , Birdia, France",
+      company: "Birdia",
+      companylogo: require("./assets/images/birdia.jpg"),
+      date: "Septembre 2023 – Présent",
       desc:
-        ""
+        "Traitement des images satellitaires et ortho pour la détection des objets d'intéréts "
         ,
       descBullets: [
-        "Langages: Java / Typescript/ shell",
-        "Principaux frameworks: Spring Boot,Angular",
-        "SGBD: Elasticsearch (java api, es search DSL), Postgresql.",
-        "Autres: Webpack, Bootstrap, Maven, Tomcat, Git, jenkins,kubernetes."
+        "Approches Statistiques: Machine Learning, Deep Learning,, Traitement d’images satellitaires",
+       "modèle IA: YOLO, Detectron2, SAM, SAM2,MRCNN, FCN, UNET, mask2former, DETR, MRCNN, KNN, KMeans",
+        "SIG : QGIS, GeoPandas, Shapely",
+        "Cloud : AWS Sagemaker, Azure, S3",
+        "langugage de Programmation: Python",
+        "Méthodologie : SCRUM Agile",
       ]
     },
     {
-      role: "Consultant Spring Boot/Angular",
-      company: "SAGEMCOM",
-      companylogo: require("./assets/images/sagem.png"),
-      date: "Février 2019 – Janvier 2022",
+      role: "Chercheuse hébergée",
+      company: "Laboratoire LATIM: UBO, IMT- atlantique,France",
+      companylogo: require("./assets/images/ubo2.png"),
+      date: "février 2023 - août 2023",
       desc:
-        "prestataire de services au projet sagemcom : comptage intelligent"
+      "Recherche et veille technologique sur les dernières avancées en raisonnement à base de cas pour l’aide au diagnostic médical, Machine Learning"
         ,
       descBullets: [
-        "Langages: Java and JavaScript ES6.",
-        "Principaux frameworks: Spring Core, Apache Camel, Apache Karaf,Kibana, Hibernate, Angular",
-        "SGBD: Elasticsearch (java api, es search DSL), Postgresql.",
-        "Autres: Webpack, Bootstrap, Maven, Tomcat, Git, jenkins."
+
       ]
     },
     {
-      role: "développeur Spring Boot/Angular",
-      company: "TALAN",
-      companylogo: require("./assets/images/logo-talan.png"),
-      date: "Juin 2019 – Janvier 2022",
+      role: "Enseignante ATER-Temps Plein",
+      company: "Université de Bretagne Occidentale (UBO), France",
+      companylogo: require("./assets/images/ubo2.png"),
+      date: "septembre 2022 - août 2023",
       desc:
-        "développement d'une plateforme de supervision générique pour une infrastructure IoT",
+        "",
       descBullets: [
-        "Langages: Java 8 and JavaScript ES6.",
-        "Principaux frameworks: Spring Core, Spring MVC, Spring Data, JPA, Spring Security, Hibernate, Angular",
-        "SGBD: Elasticsearch, MySQL.",
-        "Autres: Chart.js, Leaflet, Webpack, Bootstrap, Maven, Tomcat, Git."
+        "Enseignement et accompagnement d’étudiants sur les matières: Algorithmique et programmation, programmation fonctionnelle, base de données relationnelles, technologie informatique et projet de conception objets",
+        "langugage de Programmation & outils: Python, Java, SQL",
+
       ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "MIND ENGINEERING",
-      companylogo: require("./assets/images/mind.jpg"),
-      date: "juin 2016 – Septembre 2016",
+      role: "Doctorante en cotutelle",
+      company: "INTRADYS,IMT-atlantique, France - ENSI,Tunisie",
+      companylogo: require("./assets/images/intradys.jpg"),
+      date: "septembre 2019 - décembre 2022",
       desc:
-        "tests et validation de projets à l'aide de testng et de selinium webdriver.",
+        "Développement d’un système d’aide au diagnostic médical basé sur le raisonnement à base de cas, répondant à des enjeux critiques dans le domaine de la santé",
         descBullets: [
-          "technologies: java, selenium, testng, JUnit"
+          "langugage de Programmation & outils: Python",
+          "Approches Statistiques: Machine Learning, Deep Learning, Traitement et analyse des données massives, Raisonnement à base de cas, Clustering, Classification, Théorie des ensembles flou, Théorie des possibilités, Mesure de similarité",
+          "modèle IA: MRCNN, KNN, KMeans",
+        ]
+    },
+    {
+      role: "Enseignante vacataire",
+      company: "Ecole Nationale des Ingènieurs de Brest (ENIB) (Temps partiel),France",
+      companylogo: require("./assets/images/enib.png"),
+      date: "février 2022 - mai 2022",
+      desc:
+        "",
+        descBullets: [
+          "Animation de cours en initiant les étudiants à des projets concrets tels que la création de jeux en Python",
+          "langugage de Programmation & outils: Python"
+        ]
+    },
+    {
+      role: "Enseignante vacataire",
+      company: "Institut des Hautes Etudes Tunisie (Temps partiel), Tunisie",
+      companylogo: require("./assets/images/ihet.png"),
+      date: " septembre 2019 - décembre 2019",
+      desc:
+       "",
+        descBullets: [
+           "Animation de cours sur les réseaux informatiques et développement logiciel",
+          
         ]
     }
-  
+
   ]
 };
 
@@ -215,67 +255,106 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Projets auxquels j'ai participé",
+  title: "Les articles que j'ai rédigé",
   subtitle: "",
   projects: [
     {
-      image: require("./assets/images/compteur-linky.png"),
-      projectName: "ENEDIS Solution de comptage intelligent",
-      projectDesc: "Participer dans les developpement des microservices de départemnt TI-STM qui traitent les données énergétiques, Le département TI-STM est dédié au traitement des données de mesure, au stockage des données collectées",
+      image: require("./assets/images/these.png"),
+      projectName: "Thèse de doctorat",
+      projectDesc: "Raisonnement à base de cas pour l’aide au diagnostic médical: application AVC. 2022. Thèse de doctorat. Ecole nationale supérieure Mines-Télécom Atlantique Bretagne Pays de la Loire.",
       footerLink: [
         {
           name: "Visitez le site web",
-          url: "https://www.enedis.fr/le-compteur-linky-vous-facilite-la-vie"
+          url: " https://www.theses.fr/2022IMTA0326"
         }
         //  you can add extra buttons here.
-      ]
+      ] 
     },
     {
-      image: require("./assets/images/siconia.png"),
-      projectName: "SICONIA Comptage intelligent",
-      projectDesc: "Suite logicielle de Sagemcom : Siconia® est une plateforme unifiée Smart Grid conçue pour accompagner les processus métier des Utilities pour le comptage intelligent multi-énergies (électricité, gaz, eau, chaleur) et la supervision des réseaux de distribution.",
+      image: require("./assets/images/jcc.png"),
+      projectName: "Journal",
+      projectDesc: "Missing Data Handling: A Comprehensive Review, Taxonomy, and Comparative Evaluation",
+      footerLink: [
+        {
+          name: "accepté et en cours de publication",
+          url: ""
+        }
+        //  you can add extra buttons here.
+      ] 
+    },
+    {
+      image: require("./assets/images/irbm.jpg"),
+      projectName: "Journal",
+      projectDesc: "Stroke Treatment Prediction Using Features Selection Methods and Machine Learning Classifiers. Innovation and Research in BioMedical engineering Journal (IRBM). Nominé « Best Research Award” à International Research Awards on Neurology and Neuro Disorders »",
       footerLink: [
         {
           name: "Visitez le site web",
-          url: "https://www.sagemcom.com/V02/fr/smart-city/smart-meter/#:~:text=La%20suite%20logicielle%20de%20Sagemcom,supervision%20du%20r%C3%A9seau%20de%20distribution."
+          url: " https://doi.org/10.1016/j.irbm.2022.02.002"
         }
         //  you can add extra buttons here.
-      ]
+      ] 
     },
     {
-      image: require("./assets/images/siconia.png"),
-      projectName: "SLA",
-      projectDesc: "SLA (services-level contracts) : C'est un composant permettant d'extraire des KPI pour assurer la qualité des services fournis par le Grid.",
+      image: require("./assets/images/atsip.png"),
+      projectName: "Article Conférence",
+      projectDesc: "Structured Case Base Knowledge using Unsupervised Learning. 6th International Conference on Advanced Technologies DFM-145 For Signal and Image Processing (ATSIP 2022)",
       footerLink: [
-      ]
+        {
+          name: "Visitez le site web",
+          url: " https://ieeexplore.ieee.org/document/9805879"
+        }
+        //  you can add extra buttons here.
+      ] 
     },
     {
-      image: require("./assets/images/cim.png"),
-      projectName: "CIM",
-      projectDesc: "CIM (Common Information Model) : est un Middleware qui joue le rôle d'intermédiaire entre un système d'information central (CIS) et un équipement de comptage intelligent de la consommation d'énergie.",
+      image: require("./assets/images/atsip.png"),
+      projectName: "Article Conférence",
+      projectDesc: "Problems And Importance Of Similarity Measure. 5th International Conference on Advanced Technologies DFM-145 For Signal and Image Processing (ATSIP 2020).",
       footerLink: [
-      ]
+        {
+          name: "Visitez le site web",
+          url: "https://ieeexplore.ieee.org/document/9231755"
+        }
+        //  you can add extra buttons here.
+      ] 
+    }
+    ,
+    {
+      image: require("./assets/images/med.jpg"),
+      projectName: "Article Meduim",
+      projectDesc: "make your own visualization",
+      footerLink: [
+        {
+          name: "Visitez le site web",
+          url: "https://ikramchourib.medium.com/make-your-own-visualization-8efeea06b0d3"
+        }
+        //  you can add extra buttons here.
+      ] 
+    }
+    ,
+    {
+      image: require("./assets/images/med.jpg"),
+      projectName: "Article Meduim",
+      projectDesc: "Dirty Data, Biased Data; causes, and solutions!",
+      footerLink: [
+        {
+          name: "Visitez le site web",
+          url: "https://ikramchourib.medium.com/dirty-data-biased-data-causes-and-solutions-3bcb7e086e3d"
+        }
+        //  you can add extra buttons here.
+      ] 
     },
     {
-      image: require("./assets/images/1000cv.png"),
-      projectName: "1000 CV",
-      projectDesc: "1000 CV est un outil utilisé comme moteur de recherche de compétences qui propose de nombreux critères de recherche afin de faciliter la recherche du profil recherché.",
+      image: require("./assets/images/med.jpg"),
+      projectName: "Article Meduim",
+      projectDesc: "Steps of preprocessing data, as a data analyst",
       footerLink: [
-      ]
-    },
-    {
-      image: require("./assets/images/compta.png"),
-      projectName: "comptaNovia",
-      projectDesc: "Conception et développement d'une application de gestion des factures, ventes et achats d'entreprises en mode SaaS en architecture",
-      footerLink: [
-      ]
-    },
-    {
-      image: require("./assets/images/emdr.png"),
-      projectName: "EMDR OMES Project",
-      projectDesc: "Conception et développement d'une plateforme d'évaluation de l'intérêt de l'EMDR (Eye Movement Desensitization and Reprocessing) pour la santé mentale des personnels soignants dans le contexte de la crise sanitaire covid-19",
-      footerLink: [
-      ]
+        {
+          name: "Visitez le site web",
+          url: "https://ikramchourib.medium.com/steps-of-preprocessing-data-as-a-data-analyst-91d6be423586"
+        }
+        //  you can add extra buttons here.
+      ] 
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -297,57 +376,65 @@ const achievementSection = {
       footerLink: []
     },
     {
-      title: "Scrum for Operations and DevOps Fundamentals Certified (SODFC™)",
+      title: "Certification en « éthique de recherche » par l’université de Lyon",
       subtitle: "",
-      image: require("./assets/images/badge-SODFC.png"),
+      image: require("./assets/images/lyon.png"),
       footerLink: []
     },
     {
-      title: "MTA98-361 : Software Development Fundamentals",
+      title: "Certification en « Se former pour enseigner dans le supérieur » par MathSTIC de rennes1",
       subtitle: "",
-      image: require("./assets/images/software.png"),
+      image: require("./assets/images/rennes.png"),
       footerLink: []
     },
     {
-      title: "MTA98-388 : Programming Using Java",
+      title: "MTA98-388 : Certification MTA Introduction to Programming Using Python",
       subtitle: "",
       image: require("./assets/images/java.png"),
       footerLink: []
     },
 
     {
-      title: "MTA98-364 : Database Administration Fundamentals",
-      image: require("./assets/images/database.png"),
+      title: "Certification en Google Data Analytics by Google, Coursera",
+      image: require("./assets/images/coursera.png"),
       footerLink: []
     },
     {
-      title: "3ème place Hackathon By TAYARA",
+      title: "Certification en Machine Learning with Python by IBM, Coursera",
       subtitle: "",
-      image: require("./assets/images/comp1.jpg"),
-      footerLink: [
-        {
-          name: "Link",
-          url:
-            "https://www.tunisianmonitoronline.com/index.php/2018/10/21/hackathon-first-edition-of-tech-talks-by-tayara/"
-        }
-      ]
-    },
-    {
-      title: "2ème place hackathon IWATCH",
-      subtitle: "",
-      image: require("./assets/images/comp2.jpg"),
+      image: require("./assets/images/coursera.png"),
       footerLink: []
     },
     {
-      title: "gagnant 🏆 of STAR innovation Competetion",
+      title: "Participation au salon des maires",
       subtitle: "",
-      image: require("./assets/images/comp3.jpg"),
+      image: require("./assets/images/salon-maire.jpg"),
       footerLink: []
     },
     {
-      title: "certificat d'excellence académique ⭐",
+      title: "Participation au springer",
       subtitle: "",
-      image: require("./assets/images/certif.jpg"),
+      image: require("./assets/images/spring.jpg"),
+      footerLink: []
+    },
+    {
+      title: "Participation à FDDAY",
+      subtitle: "",
+      image: require("./assets/images/fedday.jpg"),
+      footerLink: []
+    }
+    ,
+    {
+      title: "Participation à VIVATECH",
+      subtitle: "",
+      image: require("./assets/images/viva2.jpg"),
+      footerLink: []
+    }
+    ,
+    {
+      title: "Participation à Paris Innovation",
+      subtitle: "",
+      image: require("./assets/images/paris-innov.jpg"),
       footerLink: []
     }
     
@@ -358,46 +445,33 @@ const achievementSection = {
 // Blogs Section
 
 const blogSection = {
-  title: "Veuillez consulter mes articles sur medium 📝",
+  title: "Mes Référents",
   subtitle:
-    "PASSIONNÉ PAR LE DÉVELOPPEMENT DE TRUCS SYMPAS, J'AIME ÉCRIRE OCCASIONNELLEMENT SUR MEDIUM POUR ENSEIGNER AUX AUTRES CE QUE J'AI APPRIS.",
+    "",
   
   blogs: [
     {
-      url:
-        "https://fouedbengagi.medium.com/an-elasticsearch-tutorial-getting-started-4cfb0958fc22",
-      title: "Elasticsearch for beginners",
+      title: "Basel SOLAIMAN, IMT-Atlantique, France",
       description:
-        "Do you want to start using elasticsearch but you hisitate where to start ? use my link to get a first view of elasticsearch"
+        "basel.solaiman@imt‐atlantique.fr (+33) 02 29 00 13 08"
     },
     {
-      url: "https://fouedbengagi.medium.com/elasticsearch-java-high-level-rest-client-6829ae848e43",
-      title: "Elasticsearch Java High Level REST Client?",
+    
+      title: "Gireg DESMUELLES, Ecole Nationale des Ingénieurs de Brest (ENIB), France",
       description:
-        "What is ES java high level rest client ?."
+        "desmeulles@enib.fr   +33(0)2.98.05.89.53"
     },
     {
-      url: "https://fouedbengagi.medium.com/my-experience-with-apache-camel-2095cfe9fc0c",
-      title: "My Experience with Apache Camel 😻",
+      title: " Laurence DUVAL, Université de Bretagne Occidentale (UBO), France",
       description:
-        "What i like and doesn't like about apache camel"
+        "laurence.duval@univ-brest.fr  +33 (0)2 98 01 69 75   +33 (0)6 95 89 66 39"
     }
-    ,
-    {
-      url: "https://fouedbengagi.medium.com/what-i-learned-through-my-experience-as-a-developer-dealing-with-load-test-teams-74de20417643",
-      title: "Load Testing",
-      description:
-        "What i learned through my experience as a developer dealing with load test teams"
-    }  ,
-    {
-      url: "https://fouedbengagi.medium.com/activemq-vs-kafka-1c77f5c8e5fe",
-      title: "ActiveMQ vs Kafka",
-      description:
-        "What i learned through my experience with ActiveMQ and Kafka"
-    }
+    
   ],
   display: true // Set false to hide this section, defaults to true
 };
+
+
 
 // Talks Sections
 
@@ -435,8 +509,8 @@ const contactInfo = {
   title: emoji("Contactez moi ☎️ 📧 "),
   subtitle:
     "DISCUTEZ D'UN PROJET OU SOUHAITEZ SIMPLEMENT DIRE BONJOUR ? MA BOÎTE DE RÉCEPTION EST OUVERTE À TOUS.",
-  number: "+330765287262",
-  email_address: "fouedbengagi@gmail.com"
+  number: "+33 7 74 13 86 85",
+  email_address: "ikram.chourib@gmail.com"
 };
 
 // Twitter Section
