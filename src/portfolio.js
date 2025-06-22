@@ -273,11 +273,12 @@ const bigProjects = {
     {
       image: require("./assets/images/jcc.png"),
       projectName: "Journal",
-      projectDesc: "Missing Data Handling: A Comprehensive Review, Taxonomy, and Comparative Evaluation",
+      projectDesc: "Missing Data Handling: A Comprehensive Review, Taxonomy, and Comparative Evaluation. Journal of Computer and Communications",
+
       footerLink: [
         {
-          name: "accepté et en cours de publication",
-          url: ""
+          name: "Visitez le site web",
+          url: "https://doi.org/10.4236/jcc.2025.136006"
         }
         //  you can add extra buttons here.
       ] 
